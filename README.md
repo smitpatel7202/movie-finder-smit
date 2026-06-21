@@ -4,7 +4,7 @@ A Movie Discovery App built with Next.js and the TMDB API.
 Built as part of the FlowLaunch Full-Stack Developer Intern Assignment.
 
 ## 🌐 Live Demo
-[View Live on Vercel](#) <!-- Add your Vercel URL here after deployment -->
+[View Live on Vercel](https://movie-finder-smit.vercel.app)
 
 ## ✨ Features
 
