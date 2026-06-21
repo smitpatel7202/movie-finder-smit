@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎬 Movie Finder — Smit
 
-## Getting Started
+A Movie Discovery App built with Next.js and the TMDB API.
+Built as part of the FlowLaunch Full-Stack Developer Intern Assignment.
 
-First, run the development server:
+## 🌐 Live Demo
+[View Live on Vercel](#) <!-- Add your Vercel URL here after deployment -->
 
-```bash
+## ✨ Features
+
+- 🔥 Browse popular movies in a responsive grid
+- 🔍 Real-time search by movie title
+- 📄 Pagination with exactly 12 movies per page
+- 🎬 Click any movie to view full details in a modal
+- ❤️ Add/remove favorites (persisted via localStorage)
+- ⚡ Loading, error, and empty states handled
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS + Inline Styles
+- **API:** TMDB (The Movie Database)
+- **Deployment:** Vercel
+
+## 🚀 Run Locally
+
+### 1. Clone the repo
+\```bash
+git clone https://github.com/YOUR_USERNAME/movie-finder-smit.git
+cd movie-finder-smit
+\```
+
+### 2. Install dependencies
+\```bash
+npm install
+\```
+
+### 3. Add environment variables
+Create a `.env.local` file in the root:
+\```
+NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key_here
+NEXT_PUBLIC_TMDB_BASE_URL=https://api.themoviedb.org/3
+NEXT_PUBLIC_TMDB_IMAGE_BASE=https://image.tmdb.org/t/p/w500
+\```
+
+### 4. Run the development server
+\```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+\```
+movie-finder-smit/
+├── app/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── MovieCard.js
+│   │   ├── MovieModal.js
+│   │   ├── Pagination.js
+│   │   └── FavoritesDrawer.js
+│   ├── lib/
+│   │   └── tmdb.js
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── AI_LOG.md
+├── .env.local
+└── README.md
+\```
 
-## Learn More
+## 📋 Assignment Requirements
 
-To learn more about Next.js, take a look at the following resources:
+| Requirement | Status |
+|-------------|--------|
+| Browse grid with poster, title, year, rating | ✅ |
+| Real-time search | ✅ |
+| Movie detail modal | ✅ |
+| Favorites with localStorage | ✅ |
+| Loading / error / empty states | ✅ |
+| Pagination — exactly 12 per page | ✅ |
+| Repo named `movie-finder-smit` | ✅ |
+| AI_LOG.md present | ✅ |
+| Footer: "Built for Jeevan — Smit" | ✅ |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses the [TMDB API](https://www.themoviedb.org/).
+Get your free API key at [themoviedb.org](https://www.themoviedb.org/signup).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Built for Jeevan — Smit*
